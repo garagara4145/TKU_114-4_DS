@@ -158,7 +158,7 @@ public class IntegratedStructureAudit {
                         requirement,
                         actual,
                         Structure.GRAPH,
-                        "無權重圖需要尋找最少邊路徑",
+                        "無法檢視",
                         "O(V + E)");
 
             default:
@@ -260,14 +260,14 @@ public class IntegratedStructureAudit {
         if (results == null
                 || results.isEmpty()) {
 
-            System.out.println("沒有測試資料");
+            System.out.println("沒有資料");
             return;
         }
 
         int correct = 0;
 
         System.out.println(
-                "===== 資料結構診斷報告 =====");
+                "診斷");
 
         for (int i = 0;
                 i < results.size();
@@ -287,19 +287,18 @@ public class IntegratedStructureAudit {
             }
         }
 
-        System.out.println(
-                "==========================");
+      
 
         System.out.println(
-                "測試總數 = "
+                "總數"
                         + results.size());
 
         System.out.println(
-                "合理數量 = "
+                "合理 "
                         + correct);
 
         System.out.println(
-                "不合理數量 = "
+                "不合理 "
                         + (results.size() - correct));
     }
 
@@ -313,7 +312,7 @@ public class IntegratedStructureAudit {
         System.out.println();
 
         System.out.println(
-                "===== 錯誤選擇測試 =====");
+                "錯誤");
 
         AuditResult test1 =
                 audit(
@@ -339,7 +338,7 @@ public class IntegratedStructureAudit {
         System.out.println();
 
         System.out.println(
-                "===== 無效資料測試 =====");
+                "無效");
 
         System.out.println(
                 audit(
