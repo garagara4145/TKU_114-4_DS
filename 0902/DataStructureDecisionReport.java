@@ -166,16 +166,16 @@ public class DataStructureDecisionReport {
             Requirement requirement) {
 
         System.out.println(
-                "需求 = " + requirement);
+                "需求 " + requirement);
 
         System.out.println(
-                "選擇 = " + choose(requirement));
+                "選擇 " + choose(requirement));
 
         System.out.println(
-                "理由 = " + reason(requirement));
+                "理由 " + reason(requirement));
 
         System.out.println(
-                "主要 Big-O = " + bigO(requirement));
+                " Big-O " + bigO(requirement));
 
         System.out.println();
     }
