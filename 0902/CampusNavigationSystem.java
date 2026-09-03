@@ -163,53 +163,53 @@ public class CampusNavigationSystem {
                 new CampusNavigationSystem();
 
         System.out.println(
-                "新增地點 A = "
+                "新增A  "
                         + campus.addLocation(
                                 "A",
                                 "圖書館"));
 
         System.out.println(
-                "新增地點 B = "
+                "新增 B  "
                         + campus.addLocation(
                                 "B",
                                 "教學大樓"));
 
         System.out.println(
-                "新增地點 C = "
+                "新增C  "
                         + campus.addLocation(
                                 "C",
                                 "學生活動中心"));
 
         System.out.println(
-                "新增地點 D = "
+                "新增 D  "
                         + campus.addLocation(
                                 "D",
                                 "體育館"));
 
         System.out.println(
-                "新增地點 E = "
+                "新增E  "
                         + campus.addLocation(
                                 "E",
                                 "宿舍"));
 
         System.out.println(
-                "新增道路 A-B = "
+                "新增A to B "
                         + campus.addRoad("A", "B"));
 
         System.out.println(
-                "新增道路 A-C = "
+                "新增A to C  "
                         + campus.addRoad("A", "C"));
 
         System.out.println(
-                "新增道路 B-D = "
+                "新增B to D "
                         + campus.addRoad("B", "D"));
 
         System.out.println(
-                "新增道路 C-D = "
+                "新增C to D  "
                         + campus.addRoad("C", "D"));
 
         System.out.println(
-                "新增道路 D-E = "
+                "新增D to E  "
                         + campus.addRoad("D", "E"));
 
         System.out.println(
@@ -220,55 +220,55 @@ public class CampusNavigationSystem {
                 campus.shortestPath("A", "E");
 
         System.out.println(
-                "A 到 E 的最短路徑 = "
+                "A to E 的最短路徑 = "
                         + path);
 
         System.out.println(
-                "A 到 E 的邊數 = "
+                "A to E 的邊數 = "
                         + campus.edgeCount(path));
 
         path = campus.shortestPath("A", "D");
 
         System.out.println(
-                "A 到 D 的最短路徑 = "
+                "A to D 的最短路徑 = "
                         + path);
 
         System.out.println(
-                "A 到 D 的邊數 = "
+                "A to D 的邊數 "
                         + campus.edgeCount(path));
 
         path = campus.shortestPath("A", "A");
 
         System.out.println(
-                "A 到 A 的最短路徑 = "
+                "A to A 的最短路徑 "
                         + path);
 
         System.out.println(
-                "A 到 A 的邊數 = "
+                "A to A 的邊數  "
                         + campus.edgeCount(path));
 
         path = campus.shortestPath("A", "Z");
 
         System.out.println(
-                "A 到 Z 的最短路徑 = "
+                "A to Z 的最短路徑  "
                         + path);
 
         System.out.println(
-                "不存在的 Z = "
+                "不存在Z "
                         + campus.locationName("Z"));
 
         System.out.println(
-                "重複新增 A = "
+                "重複新增 A "
                         + campus.addLocation(
                                 "A",
-                                "新圖書館"));
+                                "new id"));
 
         System.out.println(
-                "新增不存在道路 A-Z = "
+                "新增不存在A to Z  "
                         + campus.addRoad("A", "Z"));
 
         System.out.println(
-                "重複新增道路 A-B = "
+                "重複新增 A to B "
                         + campus.addRoad("A", "B"));
     }
 }

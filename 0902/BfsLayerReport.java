@@ -69,23 +69,23 @@ public class BfsLayerReport {
         graph.put("G", List.of());
 
         System.out.println(
-                "A 的距離 = "
+                "A 的距離 "
                         + distances(graph, "A"));
 
         System.out.println(
-                "D 的距離 = "
+                "D距離"
                         + distances(graph, "D"));
 
         System.out.println(
-                "G 的距離 = "
+                "G距離 "
                         + distances(graph, "G"));
 
         System.out.println(
-                "不存在的 H = "
+                "不存在的H "
                         + distances(graph, "H"));
 
         System.out.println(
-                "null 起點 = "
+                "起點 "
                         + distances(graph, null));
 
         System.out.println(
